@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+<h1 class="d-flex justify-content-center mt-5">Contact Me</h1>
+<div class="d-flex justify-content-center">
+    <form method="post" action="/thank-you">
+        <input name="name" required type="text" class="w-50 feedback-input" placeholder="Name" /><br>
+        <input name="email" required type="email" class="w-50 feedback-input" placeholder="Email" />
+        <textarea name="text" required class="w-100 feedback-input mx-0" placeholder="Comment"></textarea>
+        <input type="submit" class="w-100 h-25" value="SUBMIT" />
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>

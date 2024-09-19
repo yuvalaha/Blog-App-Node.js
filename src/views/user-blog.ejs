@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<h1>Your blog is successfully submitted!</h1>
+<h3>Here is your blog: </h3>
+<p> <%= blog %> </p>
+
+    <form action="/edit-blog?_method=PUT" method="post">
+        <button name="action" type="submit" value="edit">Press here to edit your blog</button>    
+    </form>
+    
+    <form action="/delete-blog?_method=Delete" method="post">
+        <button name="action"  type="submit" value="delete">Press here to delete your blog</button>
+    </form>
+
+
+
+<%- include("partials/footer.ejs") %>

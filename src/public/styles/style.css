@@ -1,0 +1,147 @@
+/* General Styling */
+
+html, body {
+    height: 100%; 
+    background-color: cornflowerblue;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.navbar{
+    background-color: lightgreen !important;
+}
+
+.nav-link, footer{
+    font-weight: bold;
+    font-family: "Arial";
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.active {
+    font-weight: bold;
+    font-family: Lucida;
+    color: red !important;
+    font-style: italic;
+}
+
+/* Home Styling */
+.home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.main-paragraph{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    
+    align-items: center;
+    padding-right: 100px !important;
+}
+
+.main-paragraph p:nth-child(1) {
+    margin-left: 15px;
+}
+
+.main-paragraph p:nth-child(2) {
+    margin-left: 30px;
+}
+
+.main-paragraph p:nth-child(3) {
+    margin-left: 50px;
+}
+
+.main-paragraph p:nth-child(4) {
+    margin-left: 70px;
+}
+
+.main-paragraph p:nth-child(5) {
+    margin-left: 90px;
+}
+
+.symbols{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+/* Add Blog Page */
+
+
+/* Contact Us Page */
+form {
+    margin-top: 50px;
+  }
+  
+  .feedback-input {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid lightgreen;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  .feedback-input:focus {
+    border: 2px solid #3586ff;
+  }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    margin-left: 30px;
+    
+  }
+  
+  [type="submit"] {
+    background: #3586ff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+
+  }
+  [type="submit"]:hover {
+    background: lightcoral
+  }
+  
+/* Blog Pages */
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+.card {
+    width: 400px;
+}

@@ -1,0 +1,48 @@
+<%- include("partials/header.ejs") %> <% if (locals.name) { %>
+<div class="d-flex justify-content-center align-items-center flex-column">    
+    <h1 class="mt-5">Hello <%= name %> your subject is: <%= subject %></h1>
+        
+        <h3 class="mt-3">Please write your blog:</h3>
+        <form class="m-5 " action="/submit-blog" method="post">
+        <textarea 
+            name="blog"
+            required
+            minlength="20"
+            maxlength="10000"
+            placeholder="My Blog"
+            rows="90"
+            cols="90"
+        ></textarea>
+        <div class="mt-4 mx-5 align-items-center flex-column d-flex justify-content-center">
+            <input  type="submit" value="Submit" />
+        </div>
+        
+        </form>
+</div>
+<% } else { %>
+<div class="d-flex justify-content-center align-items-center">
+    <form action="/submit" method="post" class="mx-5 mt-5">
+        <h2 class="mt-4 mb-5">Let's write some blog!!!</h2>
+        <div class="mb-5 mt-3">
+            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+            <input type="text" class="form-control w-75" name="name" id="exampleFormControlInput1" placeholder="My Name">
+        <div class="mt-4">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control w-75" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        </div>
+        <div class="mb-2">
+            <label for="subject">Choose your blog subject:</label>
+            <select id="subject" name="subject">
+                <option value="" disabled selected>Subject</option>
+                <option value="science">Science</option>
+                <option value="food">Food</option>
+                <option value="sport">Sport</option>
+                <option value="cinema">Cinema</option>
+                <option value="traveling">Traveling</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>
+<% } %> <%- include("partials/footer.ejs") %>
