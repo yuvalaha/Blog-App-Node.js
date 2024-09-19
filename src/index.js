@@ -133,10 +133,9 @@ app.put("/edit-blog", (req, res) => {
 
 // Handle blog deletion (DELETE request)
 app.delete("/delete-blog",(req,res) => {
-    active = 'add-blog';
+    blog  = null;
     title = "Delete Blog";
     res.render("delete.ejs", {blog, active, title});
-
 });
 
 
